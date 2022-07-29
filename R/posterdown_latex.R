@@ -10,7 +10,7 @@
 #'
 #' \dontrun{
 #' library(rmarkdown)
-#' draft("MyArticle.Rmd", template = "posterdown_pdf", package = "posterdown")
+#' draft("MyArticle.Rmd", template = "posterdown_pdf", package = "posterdownLaTeX")
 #' }
 #' @export
 # This is borrowed from the thesisdown package github.com/ismayc/thesisdown

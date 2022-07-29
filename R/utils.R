@@ -1,7 +1,7 @@
 # Most here is from thesisdown for the posterdown_pdf option
 find_file <- function(template, file) {
   template <- system.file("rmarkdown", "templates", template, file,
-                          package = "posterdown")
+                          package = "posterdownLaTeX")
   if (template == "") {
     stop("Couldn't find template file ", template, "/", file, call. = FALSE)
   }
@@ -31,9 +31,9 @@ merge_list <- function(x, y) {
 #' @param output Path to save output.
 #' @return (Invisibly) The path of the generate file.
 #' @examples
-#' x <- posterdown:::template_pandoc(
+#' x <- posterdownLaTeX:::template_pandoc(
 #'   list(preamble = "%abc", filename = "wickham"),
-#'   posterdown:::find_resource("posterdown_generic", "template.tex"),
+#'   posterdownLaTeX:::find_resource("posterdown_generic", "template.tex"),
 #'   tempfile()
 #' )
 #' if (interactive()) file.show(x)
