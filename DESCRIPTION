@@ -1,26 +1,15 @@
-Package: posterdown
+Package: posterdownLaTeX
 Title: Generate PDF Conference Posters Using R Markdown
-Version: 0.1.2.9000
+Version: 0.1.1
 Authors@R: 
-    c(person(given = "Brent",
-             family = "Thorne",
-             role = c("aut", "cre"),
-             email = "brent.thorne18@gmail.com",
-             comment = c(ORCID = "0000-0002-1099-3857")),
-      person(given = "Peter",
-             family = "Higgins",
-             role = "ctb"),
-      person(given = "Shea",
-             family = "Connell",
-             role = "ctb"),
-      person(given = "Luke",
-             family = "Johnston",
-             role = "ctb"))
+    c(person(given = "Ryan",
+             family = "McShane",
+             role = c("aut", "cre")))
 Description: Posterdown expands on RMarkdown to generate
     PDF and HTML conference posters.
 License: MIT + file LICENSE
-URL: https://github.com/brentthorne/posterdown
-BugReports: https://github.com/brentthorne/posterdown/issues
+URL: https://github.com/math-mcshane/posterdownLaTeX
+BugReports: https://github.com/math-mcshane/posterdownLaTeX/issues
 Imports: 
     knitr,
     pagedown,
