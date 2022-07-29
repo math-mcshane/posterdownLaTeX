@@ -1,0 +1,32 @@
+Package: posterdown
+Title: Generate PDF Conference Posters Using R Markdown
+Version: 0.1.2.9000
+Authors@R: 
+    c(person(given = "Brent",
+             family = "Thorne",
+             role = c("aut", "cre"),
+             email = "brent.thorne18@gmail.com",
+             comment = c(ORCID = "0000-0002-1099-3857")),
+      person(given = "Peter",
+             family = "Higgins",
+             role = "ctb"),
+      person(given = "Shea",
+             family = "Connell",
+             role = "ctb"),
+      person(given = "Luke",
+             family = "Johnston",
+             role = "ctb"))
+Description: Posterdown expands on RMarkdown to generate
+    PDF and HTML conference posters.
+License: MIT + file LICENSE
+URL: https://github.com/brentthorne/posterdown
+BugReports: https://github.com/brentthorne/posterdown/issues
+Imports: 
+    knitr,
+    pagedown,
+    rmarkdown,
+    yaml
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
