@@ -4,6 +4,7 @@ Version: 0.1.1
 Authors@R: 
     c(person(given = "Ryan",
              family = "McShane",
+             email = "math.mcshane@gmail.com",
              role = c("aut", "cre")))
 Description: Posterdown expands on RMarkdown to generate
     PDF and HTML conference posters.
