@@ -133,7 +133,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 |:--------------:|:-:|------------|
 | `titlebox_bgcol` | LaTeX | color of the background for the Title Box area of the poster.|
 | `titlebox_bordercol` | LaTeX | color of the border for the Title Box area of the poster.|
-| `titlebox_shape` | LaTeX | Shape of the corners for the Title box (Options include: `south` or `uphill`. For all corners to be sharp use the option `"all"`. For more options please see the **[tcolorbox manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf)** and search for "sharp corners", **HINT** there are LOTS of options there :smile: . |
+| `titlebox_shape` | LaTeX | Shape of the corners for the Title box (Options include: `northwest`, `northeast`, `southwest`, `southeast`, `north`, `south`, `east`, `west`, `downhill`, `uphill`, and `all`). For all corners to be sharp use the option `"all"`. For more options please see the **[tcolorbox manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf)** and search for "sharp corners", **HINT** there are LOTS of options there :smile: . |
 | `titlebox_borderwidth` | LaTeX | Width of the Top Title Box border. |
 | `title_textcol` | LaTeX | color of the titlebox title text (AKA your title). |
 | `author_textcol` | LaTeX | color of the author text. |
