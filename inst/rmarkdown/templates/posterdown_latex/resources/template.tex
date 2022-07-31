@@ -225,19 +225,16 @@ $endfor$
 \begin{topbox}
   \color{titletextcol}
   \vspace{0.5in}
-  \$title_textsize${$title$}  \\[0.3in]  %% SC
-  \color{authortextcol} \$author_textsize${$author$} \\[0.2in] %% SC
-  \color{affiliationtextcol} \$affiliation_textsize${$affiliation$} %% SC
+  \$title_textsize${$title$}  \\[0.3in]
+  \color{authortextcol} \$author_textsize${$author$} \\[0.2in]
+  \color{affiliationtextcol} \$affiliation_textsize${$affiliation$}
   \vspace{1cm}
 \end{topbox}
 %--------------- Title Box End -------------------%
 %----------------- Body Start --------------------%
 % Begin body of poster
 \begin{adjmulticols*}{$column_numbers$}{$column_margins$}{$column_margins$}
-\$body_textsize${  %% SC
-\color{bodytextcol}
-$body$
-}
+\$body_textsize${\color{bodytextcol}$body$}
 \end{adjmulticols*}
 %------------------ Body End ---------------------%
 %end the poster
