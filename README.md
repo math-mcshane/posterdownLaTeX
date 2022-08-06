@@ -7,12 +7,12 @@
 
 <img src="images/betterhexlogo.png" alt="posterdown logo" align="right" width = "25%" height="25%"/>
 
->**Currently undergoing major changes, please use the previous [release](https://github.com/math-mcshane/posterdown/releases) _OR_ ensure you know which commit you downloaded :)** 
+>**Currently undergoing major changes. Note that every YAML parameter currently requires an input for you to successfully knit.** 
 
 
 ### Support
 
-_You can follow me (Ryan McShane) on [twitter](twitter.com/math_mcshane) for upcoming features which may not be released on github._
+_You can follow me (Ryan McShane) on [twitter](twitter.com/math_mcshane) for upcoming features as well as to keep up with my work in academia._
 
 ## Why posterdownLaTeX
 
@@ -75,9 +75,9 @@ devtools::install_github("math-mcshane/posterdownLaTeX")
 tinytex::install_tinytex()
 ```
 
- > _**NOTE:** This will take some time to load the LaTex Packages but is the best option (in my opinion) for keeping your Latex library as small as possible. After the first download of these libraries you will not need to do this again. To confirm that Tinytex is properly installed use: `tinytex:::is_tinytex()` and you should get a value of `TRUE` in the console._
+ > _**NOTE:** This will take some time to load the LaTex Packages but is the best option (in my opinion) for keeping your Latex library as small as possible. You will only need to do this once (although I recommend reinstalling once a year). To confirm that Tinytex is properly installed use: `tinytex:::is_tinytex()` and you should get a value of `TRUE` in the console._
     
->_**NOTE:** If you have conflicting versions of Latex (i.e. tinytex and MacTex), you could have problems rendering your poster. You may need to uninstall all versions, then start over by installing posterdownLaTeX and tinytex from scratch._ 
+>_**NOTE:** If you have conflicting versions of Latex (i.e. tinytex and MacTex), you could have problems rendering your poster. You may need to uninstall all versions, then start over by installing `tinytex` and `posterdownLaTeX` from scratch._ 
 
 ## Overview
 
