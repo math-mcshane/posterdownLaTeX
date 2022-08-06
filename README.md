@@ -97,7 +97,7 @@ To use **posterdownLaTeX** from RStudio:
 devtools::install_github("math-mcshane/posterdownLaTeX")
 ```
     
-3. Use the **File / New File / R Markdown.. / From Template / Posterdown LaTeX** dialog pathway to create a conference poster.
+3. Use the **File / New File / R Markdown.. / From Template / Posterdown LaTeX** dialog pathway to create a conference poster. (**Note: this template won't knit at the moment -- [here's a file that _will_ knit](https://github.com/math-mcshane/IMS-NRC-2022-Poster-and-Presentation/blob/main/McShane_CRSP-Poster.Rmd). This is my next thing to-do!**)
 
     ![New R Markdown](images/posterdown_picture.png)
 
@@ -210,6 +210,12 @@ YAML header options have been created to provide more freedom in design (i.e. co
 As you add content to your RMarkdown file, you will notice that the output pdf will fill in columns from left to right, and from top to bottom within columns. If you have more content for your poster than available space on the default poster, it will spill onto a second page. If this occurs, you can try adding more columns and decreasing the font size (both in the YAML header) to make it work. Or, of course, edit the content to make it shorter. :smile:
 
 ## To Do List
+
+0. User end
+	- [ ] Update template file from file/new/...
+	- [ ] Update template.tex have true defaults so that users new to R Markdown need to do no additional work to get this up and running
+	- [ ] Quarto?
+
 
 1. posterdown_latex()
 
