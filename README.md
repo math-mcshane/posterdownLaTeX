@@ -113,7 +113,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 #### Essential Information
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `title` | Poster title, acts as you would expect from RMarkdown.<br><br>  **LaTeX:** You can add line breaks in your title with `\break`. |
 | `author` | List of authors. <br><br> **LaTeX:** as of now only has true support for a single author, however I have provided a hacky way to have many authors until I can find the time to figure out how to implement something like the [rticles](https://github.com/rstudio/rticles/blob/master/inst/rmarkdown/templates/mdpi_article/skeleton/skeleton.Rmd) packages does|
 | `affiliation` | Author affiliations, which just as the `author` section is currently a hacky version of what I would ultimately like to produce. |
@@ -121,7 +121,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 #### Other
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `bibliography` | The name of the .bib file (no extension needed) used for referencing. 
 | `csl`: | The citation style language template you are using 
 | `output` | For generating `posterdown_latex`, in the future other poster designs or templates may be made for this package and thus this option in the YAML will be more flexible. `posterdown_pdf` will be kept for legacy use but will not be updated, new projects which would have used it should now use `posterdown_latex`.|
