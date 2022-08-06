@@ -132,7 +132,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 ### Sizing/Formatting/Geometry
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `poster_height` | Height of the final poster output. Units can be: "in", "mm", "cm" |
 | `poster_width` |  Width of the final poster output. Units can be: "in", "mm", "cm" |
 | `column_numbers` |  Number of columns you wish for the poster to have in the main section of the poster. |
@@ -152,7 +152,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 #### Background/Line Colors
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `titlebox_bgcol` | color of the background for the Title Box area of the poster.|
 | `titlebox_bordercol` | color of the border for the Title Box area of the poster.|
 | `body_bgcol`| Background color of the poster's main body. |
@@ -163,7 +163,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 #### Text Colors
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `sectitle_textcol` | color of the Section Title Text. |
 | `title_textcol` | color of the titlebox title text (AKA your title). |
 | `author_textcol` | color of the author text. |
@@ -177,7 +177,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 ### Font Family and Text Sizes
 
 |     Option    | Description |
-|:---------------:|:--------------------:|-----------------|
+|:---------------:|-----------------|
 | `font_family` |   Selects the font family to be used on the poster. <br><br> **LaTeX:** In the future I will try to implement multiple font families for various components of the poster (such as different fonts for the title versus the main body text).  For now, only standard Latex fonts are available, see [here](https://www.overleaf.com/learn/latex/Font_typefaces) for a list of possible options.|
 | `font_size` |  Represents the point value for `\normaltextsize` in latex. All other font sizes are adjusted from this baseline. For example, if the title in the skeleton document is given the Latex command `\Huge`, meaning that the title text will be "huge" relative to the `font_size` chosen. See [Here](https://www.overleaf.com/learn/latex/Font_sizes,_families,_and_styles) for a useful resource for a better understanding of the Latex text sizing options. |
 | `title_textsize`| Title font size. <br><br> **LaTeX:** Sizes can be one of: "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge" or "Huge", see `font_size` above for more information.
@@ -191,7 +191,7 @@ YAML header options have been created to provide more freedom in design (i.e. co
 ### Adding Logos
 
 |     Option    | Description |
-|:--------------:|:-:|------------|
+|:--------------:|------------|
 | `logoleft_name` | Name of the image file you want to use for the logo to the **left**. |
 | `logoleft_width` |  Width of the image you chose (**Note**: The height will adjust automatically based on the width to avoid distortion :smile:) |
 | `logoleft_xshift` |  Value to move the image along the x-axis based on the anchor being the **left** bottom corner. |
