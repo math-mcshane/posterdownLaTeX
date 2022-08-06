@@ -112,10 +112,10 @@ YAML header options have been created to provide more freedom in design (i.e. co
 
 |     Option    | Compatability | Description |
 |:---------------:|:--------------------:|-----------------|
-| `poster_height` | LaTeX | Height of the final poster output. Units can be: "in", "mm", "cm" |
-| `poster_width` | LaTeX |  Width of the final poster output. Units can be: "in", "mm", "cm" |
-| `font_family` |  LaTeX |  Selects the font family to be used on the poster. <br><br> **LaTeX:** In the future I will try to implement multiple font families for various components of the poster (such as different fonts for the title versus the main body text).  For now, only standard Latex fonts are available, see [here](https://www.overleaf.com/learn/latex/Font_typefaces) for a list of possible options.|
-| `font_size` | LaTeX |  Represents the point value for `\normaltextsize` in latex. All other font sizes are adjusted from this baseline. For example, if the title in the skeleton document is given the Latex command `\Huge`, meaning that the title text will be "huge" relative to the `font_size` chosen. See [Here](https://www.overleaf.com/learn/latex/Font_sizes,_families,_and_styles) for a useful resource for a better understanding of the Latex text sizing options. |
+| `poster_height` | Height of the final poster output. Units can be: "in", "mm", "cm" |
+| `poster_width` |  Width of the final poster output. Units can be: "in", "mm", "cm" |
+| `font_family` |   Selects the font family to be used on the poster. <br><br> **LaTeX:** In the future I will try to implement multiple font families for various components of the poster (such as different fonts for the title versus the main body text).  For now, only standard Latex fonts are available, see [here](https://www.overleaf.com/learn/latex/Font_typefaces) for a list of possible options.|
+| `font_size` |  Represents the point value for `\normaltextsize` in latex. All other font sizes are adjusted from this baseline. For example, if the title in the skeleton document is given the Latex command `\Huge`, meaning that the title text will be "huge" relative to the `font_size` chosen. See [Here](https://www.overleaf.com/learn/latex/Font_sizes,_families,_and_styles) for a useful resource for a better understanding of the Latex text sizing options. |
 
 ### Title Box Options
 
@@ -123,78 +123,78 @@ YAML header options have been created to provide more freedom in design (i.e. co
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `title` | LaTeX | Poster title, acts as you would expect from RMarkdown.<br><br>  **LaTeX:** You can add line breaks in your title with `\break`. |
-| `author` | LaTeX | List of authors. <br><br> **LaTeX:** as of now only has true support for a single author, however I have provided a hacky way to have many authors until I can find the time to figure out how to implement something like the [rticles](https://github.com/rstudio/rticles/blob/master/inst/rmarkdown/templates/mdpi_article/skeleton/skeleton.Rmd) packages does|
-| `affiliation` | LaTeX | Author affiliations, which just as the `author` section is currently a hacky version of what I would ultimately like to produce. |
+| `title` | Poster title, acts as you would expect from RMarkdown.<br><br>  **LaTeX:** You can add line breaks in your title with `\break`. |
+| `author` | List of authors. <br><br> **LaTeX:** as of now only has true support for a single author, however I have provided a hacky way to have many authors until I can find the time to figure out how to implement something like the [rticles](https://github.com/rstudio/rticles/blob/master/inst/rmarkdown/templates/mdpi_article/skeleton/skeleton.Rmd) packages does|
+| `affiliation` | Author affiliations, which just as the `author` section is currently a hacky version of what I would ultimately like to produce. |
 
 #### Style & Formatting
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `titlebox_bgcol` | LaTeX | color of the background for the Title Box area of the poster.|
-| `titlebox_bordercol` | LaTeX | color of the border for the Title Box area of the poster.|
-| `titlebox_shape` | LaTeX | Shape of the corners for the Title box (Options include: `northwest`, `northeast`, `southwest`, `southeast`, `north`, `south`, `east`, `west`, `downhill`, `uphill`, and `all`). For all corners to be sharp use the option `"all"`. |
-| `titlebox_borderwidth` | LaTeX | Width of the Top Title Box border. |
-| `title_textcol` | LaTeX | color of the titlebox title text (AKA your title). |
-| `author_textcol` | LaTeX | color of the author text. |
-| `affiliation_textcol` | LaTeX | color of the affiliation text. |
-| `title_textsize`| LaTeX | Title font size. <br><br> **LaTeX:** Sizes can be one of: "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge" or "Huge", see `font_size` above for more information.
-| `author_textsize`|  LaTeX | Author list font size
-| `affiliation_textsize`| LaTeX | Affiliations list font size
+| `titlebox_bgcol` | color of the background for the Title Box area of the poster.|
+| `titlebox_bordercol` | color of the border for the Title Box area of the poster.|
+| `titlebox_shape` | Shape of the corners for the Title box (Options include: `northwest`, `northeast`, `southwest`, `southeast`, `north`, `south`, `east`, `west`, `downhill`, `uphill`, and `all`). For all corners to be sharp use the option `"all"`. |
+| `titlebox_borderwidth` | Width of the Top Title Box border. |
+| `title_textcol` | color of the titlebox title text (AKA your title). |
+| `author_textcol` | color of the author text. |
+| `affiliation_textcol` | color of the affiliation text. |
+| `title_textsize`| Title font size. <br><br> **LaTeX:** Sizes can be one of: "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge" or "Huge", see `font_size` above for more information.
+| `author_textsize`|  Author list font size
+| `affiliation_textsize`| Affiliations list font size
 
 #### Adding Logos
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `logoleft_name` | LaTeX | Name of the image file you want to use for the logo to the **left**. |
-| `logoleft_width` |  LaTeX |Width of the image you chose (**Note**: The height will adjust automatically based on the width to avoid distortion :smile:) |
-| `logoleft_xshift` |  LaTeX | Value to move the image along the x-axis based on the anchor being the **left** bottom corner. |
-| `logoleft_yshift` | LaTeX | Value to move the image along the y-axis based on the anchor being the **left** bottom corner. |
-| `logoright_name` | LaTeX | Name of the image file you want to use for the logo to the **right**. |
-| `logoright_width` | LaTeX | Width of the image you chose (**Note**: The height will adjust automatically based on the width to avoid distortion :smile:) |
-| `logoright_xshift` | LaTeX | Value to move the image along the x-axis based on the anchor being the **right** bottom corner. |
-| `logoright_yshift` | LaTeX | Value to move the image along the y-axis based on the anchor being the **right** bottom corner. |
+| `logoleft_name` | Name of the image file you want to use for the logo to the **left**. |
+| `logoleft_width` |  Width of the image you chose (**Note**: The height will adjust automatically based on the width to avoid distortion :smile:) |
+| `logoleft_xshift` |  Value to move the image along the x-axis based on the anchor being the **left** bottom corner. |
+| `logoleft_yshift` | Value to move the image along the y-axis based on the anchor being the **left** bottom corner. |
+| `logoright_name` | Name of the image file you want to use for the logo to the **right**. |
+| `logoright_width` | Width of the image you chose (**Note**: The height will adjust automatically based on the width to avoid distortion :smile:) |
+| `logoright_xshift` | Value to move the image along the x-axis based on the anchor being the **right** bottom corner. |
+| `logoright_yshift` | Value to move the image along the y-axis based on the anchor being the **right** bottom corner. |
 
 ### Poster Body Options
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `body_bgcol`| LaTeX | Background color of the poster's main body. |
-| `body_textsize`| LaTeX | Font size of the poster's main paragraphs from the body. Sizes can be one of: "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge" or "Huge", see `font_size` above for more information.  |
-| `body_textcol` | LaTeX | color of the main body text. |
-| `column_numbers` |  LaTeX | Number of columns you wish for the poster to have in the main section of the poster. |
-| `column_margins` | LaTeX | Spcaing between each column as well as the edge of the poster.|
-| `columnline_col` | LaTeX | color of the line which divides each column in the poster. |
-| `columnline_width` | LaTeX | Width of line between each column. |
+| `body_bgcol`| Background color of the poster's main body. |
+| `body_textsize`| Font size of the poster's main paragraphs from the body. Sizes can be one of: "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge" or "Huge", see `font_size` above for more information.  |
+| `body_textcol` | color of the main body text. |
+| `column_numbers` |  Number of columns you wish for the poster to have in the main section of the poster. |
+| `column_margins` | Spcaing between each column as well as the edge of the poster.|
+| `columnline_col` | color of the line which divides each column in the poster. |
+| `columnline_width` | Width of line between each column. |
 
 #### Section Title Styling
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `sectitle_textcol` | LaTeX | color of the Section Title Text. |
-| `sectitle_bgcol` | LaTeX | color of the section title box. |
-| `sectitle_bordercol` | LaTeX | color of the border around the section text box. |
-| `sectitle_borderwidth` | LaTeX | Thickness of the section title box border. |
-| `sectitle_boxshape` | LaTeX | Shape of the corners for the section title box. Options such as `south` or `uphill`. For all corners to be sharp use the option `"all"`. For more options please see the [tcolorbox manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf) and search for "sharp corners", **HINT** there are LOTS of options there :smile: . |
+| `sectitle_textcol` | color of the Section Title Text. |
+| `sectitle_bgcol` | color of the section title box. |
+| `sectitle_bordercol` | color of the border around the section text box. |
+| `sectitle_borderwidth` | Thickness of the section title box border. |
+| `sectitle_boxshape` | Shape of the corners for the section title box. Options such as `south` or `uphill`. For all corners to be sharp use the option `"all"`. For more options please see the [tcolorbox manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf) and search for "sharp corners", **HINT** there are LOTS of options there :smile: . |
 
 ### Bibliography Options
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `bibliography` | LaTeX | Name of the `.bib`. file which you are using to source material. As of right now only `biblatex` is working.
-| `bibliography_spacing` | LaTeX | Sets the mutiplier for line spacing between bibliography entries, default value is `0.8`. Useful if you need to squeeze more space from somewhere.
-| `bibliography_textsize`| LaTeX | Bibliography font size |
+| `bibliography` | Name of the `.bib`. file which you are using to source material. As of right now only `biblatex` is working.
+| `bibliography_spacing` | Sets the mutiplier for line spacing between bibliography entries, default value is `0.8`. Useful if you need to squeeze more space from somewhere.
+| `bibliography_textsize`| Bibliography font size |
 
 ### Other
 
 |     Option    | Compatability | Description |
 |:--------------:|:-:|------------|
-| `cite_col` | LaTeX | color of the citation link elements when using `biblatex`. |
-| `url_col` | LaTeX | color of URL links specifically. |
-| `link_col` | LaTeX | color of in-document links (example would be referencing a Figure or a Table). |
-| `footnote_textcol` | LaTeX | color of the footnote text. |
-| `header-includes` | LaTeX | (Optional) Content to include in the header, provided as a one line command or a YAML list with one command per line. For example, to use a sans-serif font as the default font: `header-includes: \renewcommand{\familydefault}{\sfdefault}`.|
-| `output` | LaTeX | For generating `posterdown_latex`, in the future other poster designs or templates may be made for this package and thus this option in the YAML will be more flexible. `posterdown_pdf` will be kept for legacy use but will not be updated, new projects which would have used it should now use `posterdown_latex`.|
+| `cite_col` | color of the citation link elements when using `biblatex`. |
+| `url_col` | color of URL links specifically. |
+| `link_col` | color of in-document links (example would be referencing a Figure or a Table). |
+| `footnote_textcol` | color of the footnote text. |
+| `header-includes` | (Optional) Content to include in the header, provided as a one line command or a YAML list with one command per line. For example, to use a sans-serif font as the default font: `header-includes: \renewcommand{\familydefault}{\sfdefault}`.|
+| `output` | For generating `posterdown_latex`, in the future other poster designs or templates may be made for this package and thus this option in the YAML will be more flexible. `posterdown_pdf` will be kept for legacy use but will not be updated, new projects which would have used it should now use `posterdown_latex`.|
 
 ## Markdown Customization
 
